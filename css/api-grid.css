@@ -1,0 +1,475 @@
+.grid{
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;    
+    width: 100%;
+}
+/* ESPACIADO TANTO COLUMNA Y FILA */
+.gap-xy-1{
+    grid-gap: .5rem;
+}
+.gap-xy-2{
+    grid-gap: 1rem;
+}
+.gap-xy-3{
+    grid-gap: 1.5rem;
+}
+.gap-xy-4{
+    grid-gap: 2rem;
+}
+.gap-xy-5{
+    grid-gap: 2.5rem;
+}
+/* ESPACIADO TANTO COLUMNA */
+.col-gap-1{
+    column-gap: .5rem;
+}
+.col-gap-2{
+    column-gap: 1rem;
+}
+.col-gap-3{
+    column-gap: 1.5rem;
+}
+.col-gap-4{
+    column-gap: 2rem;
+}
+.col-gap-5{
+    column-gap: 2.5rem;
+}
+/* ESPACIADO TANTO FILAS */
+.row-gap-1{
+    row-gap: .5rem;
+}
+.row-gap-2{
+    row-gap: 1rem;
+}
+.row-gap-3{
+    row-gap: 1.5rem;
+}
+.row-gap-4{
+    row-gap: 2rem;
+}
+.row-gap-5{
+    row-gap: 2.5rem;
+}
+
+/* SMALL (sm) FIRST 00PX */
+
+.s-grid-1{
+    grid-template-columns: repeat(1fr);
+}
+.s-grid-2{
+    grid-template-columns: repeat(1fr);
+}
+.s-grid-3{
+    grid-template-columns: repeat(1fr);
+}
+.s-grid-4{
+    grid-template-columns: repeat(1fr);
+}
+.s-grid-5{
+    grid-template-columns: repeat(1fr);
+}
+.s-grid-6{
+    grid-template-columns: repeat(1fr);
+}
+.cross-center-small{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s-sticky-05,
+.md-sticky-05,
+.lg-sticky-05,
+.xl-sticky-05,
+.s-sticky-0,
+.md-sticky-0,
+.lg-sticky-0,
+.xl-sticky-0 {
+    position: -webkit-sticky;
+    position: sticky;    
+}
+.s-sticky-05{
+    top: calc(var(--header-height) + 0.25rem);
+}
+.s-sticky-0{
+    top: calc(var(--header-height) + 0);
+}
+.s-sticky-none {
+    position: static;
+}
+.s-pt-1 {
+    padding-top: 0.5rem;
+}
+.s-pl-1 {
+padding-left: 0.5rem;
+}
+.s-pb-1 {
+padding-bottom: 0.5rem;
+}
+.s-pr-1 {
+padding-right: 0.5rem;
+}
+.s-py-1 {
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+}
+.s-px-1 {
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+}
+.s-pxy-1 {
+padding: 0.5rem;
+}
+.s-pt-2 {
+    padding-top: 1rem;
+}
+.s-pl-2 {
+padding-left: 1rem;
+}
+.s-pb-2 {
+padding-bottom: 1rem;
+}
+.s-pr-2 {
+padding-right: 1rem;
+}
+.s-py-2 {
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+.s-px-2 {
+padding-left: 1rem;
+padding-right: 1rem;
+}
+.s-pxy-2 {
+padding: 1rem;
+}
+.s-pt-3 {
+    padding-top: 1.5rem;
+}
+.s-pl-3 {
+padding-left: 1.5rem;
+}
+.s-pb-3 {
+padding-bottom: 1.5rem;
+}
+.s-pr-3 {
+padding-right: 1.5rem;
+}
+.s-py-3 {
+padding-top: 1.5rem;
+padding-bottom: 1.5rem;
+}
+.s-px-3 {
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+.s-pxy-3 {
+padding: 1.5rem;
+}
+/* SMALL (md) FIRST 576PX */
+@media screen and (min-width:640px) {
+    .md-grid-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .md-grid-3{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .md-grid-4{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .md-grid-5{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .md-grid-6{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .md-sticky-05{
+        top: calc(var(--header-height) + 0.25rem);
+    }
+    .md-sticky-0{
+        top: calc(var(--header-height) + 0);
+    }
+    .md-sticky-none {
+        position: static;
+    }
+    .md-pt-1 {
+        padding-top: 0.5rem;
+    }
+    .md-pl-1 {
+    padding-left: 0.5rem;
+    }
+    .md-pb-1 {
+    padding-bottom: 0.5rem;
+    }
+    .md-pr-1 {
+    padding-right: 0.5rem;
+    }
+    .md-py-1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    }
+    .md-px-1 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }
+    .md-pxy-1 {
+    padding: 0.5rem;
+    }
+    .md-pt-2 {
+        padding-top: 1rem;
+    }
+    .md-pl-2 {
+    padding-left: 1rem;
+    }
+    .md-pb-2 {
+    padding-bottom: 1rem;
+    }
+    .md-pr-2 {
+    padding-right: 1rem;
+    }
+    .md-py-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+    .md-px-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+    .md-pxy-2 {
+    padding: 1rem;
+    }
+    .md-pt-3 {
+        padding-top: 1.5rem;
+    }
+    .md-pl-3 {
+    padding-left: 1.5rem;
+    }
+    .md-pb-3 {
+    padding-bottom: 1.5rem;
+    }
+    .md-pr-3 {
+    padding-right: 1.5rem;
+    }
+    .md-py-3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    }
+    .md-px-3 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    }
+    .md-pxy-3 {
+    padding: 1.5rem;
+    }
+}
+/* MEDIUM (lg) FIRST 576PX */
+@media screen and (min-width:1024px) {
+    .lg-grid-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .lg-grid-3{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .lg-grid-4{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .lg-grid-5{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .lg-grid-6{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .lg-sticky-05{
+        top: calc(var(--header-height) + 0.25rem);
+    }
+    .lg-sticky-0{
+        top: calc(var(--header-height) + 0);
+    }
+    .lg-sticky-none {
+        position: static;
+    }
+    .lg-pt-1 {
+        padding-top: 0.5rem;
+    }
+    .lg-pl-1 {
+    padding-left: 0.5rem;
+    }
+    .lg-pb-1 {
+    padding-bottom: 0.5rem;
+    }
+    .lg-pr-1 {
+    padding-right: 0.5rem;
+    }
+    .lg-py-1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    }
+    .lg-px-1 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }
+    .lg-pxy-1 {
+    padding: 0.5rem;
+    }
+    .lg-pt-2 {
+        padding-top: 1rem;
+    }
+    .lg-pl-2 {
+    padding-left: 1rem;
+    }
+    .lg-pb-2 {
+    padding-bottom: 1rem;
+    }
+    .lg-pr-2 {
+    padding-right: 1rem;
+    }
+    .lg-py-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+    .lg-px-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+    .lg-pxy-2 {
+    padding: 1rem;
+    }
+    .lg-pt-3 {
+        padding-top: 1.5rem;
+    }
+    .lg-pl-3 {
+    padding-left: 1.5rem;
+    }
+    .lg-pb-3 {
+    padding-bottom: 1.5rem;
+    }
+    .lg-pr-3 {
+    padding-right: 1.5rem;
+    }
+    .lg-py-3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    }
+    .lg-px-3 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    }
+    .lg-pxy-3 {
+    padding: 1.5rem;
+    }
+}
+/* MEDIUM (xl) FIRST 576PX */
+@media screen and (min-width:1440px) {
+    .xl-grid-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .xl-grid-3{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .xl-grid-4{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .xl-grid-5{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .xl-grid-6{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .xl-grid-7{
+        grid-template-columns: repeat(7,1fr);
+    }
+    .xl-grid-8{
+        grid-template-columns: repeat(8,1fr);
+    }
+    .xl-grid-9{
+        grid-template-columns: repeat(9,1fr);
+    }
+    .xl-grid-10{
+        grid-template-columns: repeat(10,1fr);
+    }
+    .xl-grid-11{
+        grid-template-columns: repeat(11,1fr);
+    }
+    .xl-grid-12{
+        grid-template-columns: repeat(12,1fr);
+    }
+    .xl-sticky-05{
+        top: calc(var(--header-height) + 0.25rem);
+    }
+    .xl-sticky-0{
+        top: calc(var(--header-height) + 0);
+    }
+    .xl-sticky-none {
+        position: static;
+    }
+    .xl-pt-1 {
+        padding-top: 0.5rem;
+    }
+    .xl-pl-1 {
+        padding-left: 0.5rem;
+    }
+    .xl-pb-1 {
+    padding-bottom: 0.5rem;
+    }
+    .xl-pr-1 {
+    padding-right: 0.5rem;
+    }
+    .xl-py-1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    }
+    .xl-px-1 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }
+    .xl-pxy-1 {
+    padding: 0.5rem;
+    }
+    .xl-pt-2 {
+        padding-top: 1rem;
+    }
+    .xl-pl-2 {
+    padding-left: 1rem;
+    }
+    .xl-pb-2 {
+    padding-bottom: 1rem;
+    }
+    .xl-pr-2 {
+    padding-right: 1rem;
+    }
+    .xl-py-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+    .xl-px-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+    .xl-pxy-2 {
+    padding: 1rem;
+    }
+    .xl-pt-3 {
+        padding-top: 1.5rem;
+    }
+    .xl-pl-3 {
+    padding-left: 1.5rem;
+    }
+    .xl-pb-3 {
+    padding-bottom: 1.5rem;
+    }
+    .xl-pr-3 {
+    padding-right: 1.5rem;
+    }
+    .xl-py-3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    }
+    .xl-px-3 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    }
+    .xl-pxy-3 {
+    padding: 1.5rem;
+    }
+}

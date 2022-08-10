@@ -1,0 +1,25 @@
+.slider-taller{
+    background-color: var(--bg-body);
+}
+.danger-transparent{
+    border: 1px solid var(--bg-danger);
+    color: var(--bg-danger);
+    border-radius: 3px;
+    display: inline-flex;
+    padding: 0.3rem .8rem;
+    transition: all .25s;
+}
+.danger-transparent:hover{
+    background-color: var(--bg-danger);
+    color: var(--text-light);
+}
+.live-content{
+    border: 1px solid var(--border-color-alt);
+    background-color: var(--bg-body);
+    padding: 0.5rem;
+    border-radius: .5rem;
+}
+.live-description{
+    padding-bottom: 0.3rem;
+    color: var(--text-muted);
+}

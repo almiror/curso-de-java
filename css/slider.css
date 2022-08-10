@@ -1,0 +1,45 @@
+.slider-home{
+    background-image: url("../assets/img/public/woman-student-small.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 92vh;
+    background-repeat: no-repeat;
+}
+.descriptions-slider{
+    text-align: center;
+}
+.view-video{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg-primary);
+    box-shadow: 0 0 0 5px rgba(0,0,0,.1),
+    0 0 0 5px rgba(0,0,0,.1) inset;
+    color: var(--text-light);
+    position: relative;
+}
+.view-video::before{
+    content: "Ver video";
+    position: absolute;
+    bottom: -3rem;
+    width: 70px;
+    padding: 0.3rem;
+    border-radius: 4px;
+    background-color: var(--bg-dark);
+    transition: all .2s ease-in-out;
+    font-size: var(--smaller-font-size);
+    visibility: hidden;
+}
+.view-video:hover::before{    
+    bottom: -1.8rem;
+   visibility: visible;
+}
+.icon-play-button{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    fill:var(--bg-light)
+}

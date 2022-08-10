@@ -1,0 +1,90 @@
+/*# Variables, colores, tipografias*/
+:root{
+    /*# Background color*/
+    --bg-primary             :#1192ee;
+    --bg-primary-alt         :#0b84db;
+    --bg-secondary           :#01CAFE;
+    --bg-secondary-alt       :#02aad4;
+    --bg-dark                :#22303a;
+    --bg-dark-alt            :#1a252d;
+    --bg-dark-off            :#2a3b47;
+    --bg-icon-fill           :#a7a7a7;
+    --bg-warning             :#ffba42;
+    --bg-warning-alt         :#e5a638;
+    --bg-light               :#ffffff;
+    --bg-body                :#fbfbfe;
+    --bg-danger              :#F24E59;
+    --bg-danger-alt          :#f18888;
+    --bg-succes-50           :#6ce0a6; 
+    --bg-succes              :#2dd280; 
+    --bg-btn-login           :#697477;   
+
+    /*# Styles text*/
+    --text-primary           :#53575A;
+    --text-secondary         :#6c757d;
+    --text-info              :#02aad4;
+    --text-success           :#28a745;
+    --text-danger            :#F24E59;
+    --text-warning           :#ffc107;
+    --text-light             :#f8f9fa;
+    --text-dark              :#22303a;
+    --text-muted             :#6c757d;
+    --text-white             :#ffffff;
+    --text-title             :#2a3b47;
+    --text-menu              :#a0a7ac;
+    --text-light-alt         :#a0a7ac;
+    /*# Style links*/
+    --info-link              :#66d1ff;
+    --muted-link             :#6c757d;
+    --bg-dark-offset         :#6a8bad;
+
+    /*# Styles border*/
+    --border-color           :#eff3f5;
+    --border-color-alt       :#DFE0E0;
+
+
+    /*# Box shadows*/
+    --box-shadow          :0 2px 4px rgba(174,190,205,.3);
+    --box-shadow-alt      :0 2px 4px rgba(0,0,0,.15);
+    --h1-font-size           : 1.5rem;
+    --h2-font-size           : 1.25rem;
+    --h3-font-size           : 1rem;
+    --normal-font-size       : 0.875rem;
+    --small-font-size        : 0.8125rem;
+    --smaller-font-size      : 0.75rem;
+    --heading-line-height    : 1.3;
+    --body-line-height       : 1.6;
+
+
+    /*# Z-INDEX Styles*/
+    --z-behind             : -10;
+    --z-normal               : 1;
+    --z-tooltip              : 10;
+    --z-fixed                : 100;
+    --z-modal                : 1000;
+    --z-modal-alt            : 10000;
+
+
+    /*# Sryles fonts*/
+    --heading-font           :'Raleway', sans-serif;
+    --body-font              :'Open Sans', sans-serif;
+
+
+
+    --header-height          : 4rem;
+    --gap: 1rem;
+    --max-width: 1200px;
+}
+
+@media screen and (min-width:1024px){
+    :root{
+    --h1-font-size        : 2.5rem;
+    --h2-font-size        : 1.75rem;
+    --h3-font-size        : 1.25rem;
+    --normal-font-size    : 1rem;
+    --small-font-size     : 0.875rem;
+    --smaller-font-size   : 0.8125rem;
+    }
+}
+
+/*#Styles box model*/

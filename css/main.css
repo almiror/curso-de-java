@@ -1,0 +1,220 @@
+@import "./start.css";
+@import "./variables.css";
+@import "./header.css";
+@import "./slider.css";
+@import "./features.css";
+@import "./desafios.css";
+@import "./footer.css";
+@import "./taller-slider.css";
+@import "./taller-card.css";
+@import "./aside-menu.css";
+@import "./taller-container.css";
+@import "./rwd.css";
+body::-webkit-scrollbar{
+	width: 8px;
+	background-color: var(--primary);
+    cursor: pointer;
+}
+body::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(27, 38, 44,.1);
+	box-shadow: inset 0 0 6px rgba(27, 38, 44,.1);
+    background-color: rgba(255,255,255,.1);
+	border-right: 10px solid rgba(27, 38, 44,.1);
+}
+body::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:active {
+  background-color: var(--border-color-alt);
+}
+.cross-center {
+    display: flex;
+    align-items: center;
+}
+.s-cross-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.smaller{
+    font-size: var(--smaller-font-size);
+}
+.small{
+    font-size: var(--small-font-size);
+}
+.normal{
+    font-size: var(--normal-font-size);
+}
+.t1{
+    font-size: var(--h1-font-size);
+}
+.t2{
+    font-size: var(--h2-font-size);
+}
+.t3{
+    font-size: var(--h3-font-size);
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-800{
+    font-weight: 800;
+}
+.btn{
+    padding: 0.65rem 1rem;
+}
+.primary{
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    border-radius: 4px;
+    border: 1px solid var(--bg-primary);
+}
+.primary:hover{
+    background-color: var(--bg-primary-alt);
+}
+.search{
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid var(--border-color-alt);
+    width: 15rem;
+    border-radius: 2px;
+    color: var(--text-secondary);
+    font-size: var(--small-font-size);
+    background-color: var(--bg-body);
+}
+.search::placeholder{
+    color: var(--text-menu);
+}
+[type=search] {
+    background: #fff url(https://ux.ed.team/img/icon-search.svg) center right 1rem/1rem no-repeat!important;
+}
+[type=search]:not(:placeholder-shown) {
+    background: #fff!important;
+}
+.z-behind {
+    z-index: var(--z-behind );
+}
+.z-normal {
+    z-index: var(--z-normal );
+}
+.z-tooltip {
+    z-index: var(--z-tooltip );
+}
+.z-fixed {
+    z-index: var(--z-fixed );
+}
+.z-modal {
+    z-index: var(--z-modal );
+}
+.z-modal-alt {
+    z-index: var(--z-modal-alt );
+}
+.color-title{
+    color: var(--bg-dark-off);
+}
+.color-primary{
+    color: var(--bg-primary);
+}
+.color-muted{
+    color: var(--text-muted);
+}
+.color-title-offset{
+    color: #6a8bad;
+}
+.color-text{
+    color: var(--text-secondary);
+}
+.color-light{
+    color: var(--text-light);
+}
+.text-center{
+    text-align: center;
+}
+.mb-1{
+    margin-bottom: 3rem;
+}
+.description-section {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.line-clamp-1,
+.line-clamp-2,
+.line-clamp-3,
+.line-clamp-4,
+.line-clamp-5,
+.line-clamp-6{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+}
+.line-clamp-1{    
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+}
+.line-clamp-2{    
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+.line-clamp-3{    
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+.line-clamp-4{    
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+}
+.line-clamp-5{    
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+}
+.line-clamp-6{    
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+}
+.relative{
+    position: relative;
+}
+.m-0{
+    margin: 0;
+}
+.bg-primary-prev-footre{
+    background: linear-gradient(90deg, #0c66a6, var(--bg-primary-alt))
+}
+.button-landing-primary{
+    display: inline-flex;
+    background-color: var(--bg-light);
+    border-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    color: var(--bg-primary);
+    transition: all .25rem;
+    line-height: inherit;
+}
+.button-landing-primary:hover{
+    transform: scale(1.05);
+}
+.color-info-link{
+    color: var(--info-link);
+}
+.content-right{
+    display: flex;
+    justify-content: end;
+}
+.actives-items{
+    color: var(--text-success);
+    font-weight: 700;
+    background-color: rgba(0, 128, 0, 0.11);
+    padding-left: 0.5rem;
+}
+.color-text-succes{
+    color: var(--bg-succes);
+}

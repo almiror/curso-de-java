@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Curso Práctico de Java 11 + y MySQL proyecto final (Sistemas de ventas) | Almiror Cursos</title>
+    <meta name="author" content="Julio Quiñones Aranda" />
+    <meta name="geo.region" content="PE">
+    <meta name="keywords" content="..." />
+    <meta name="copyright" content="Julio Quiñones Aranda">
+    <meta name="description"
+        content="Usa tus habilidades para crear un excelente portafolio y conseguir el trabajo de tus sueños." />
+    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon/favicon.svg" />
+    <meta name="theme-color" content="#007BDF">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Almiror Cursos">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="../assets/img/favicon/favicon.png">
+    <link rel="apple-touch-startup-image" href="../assets/img/favicon/favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Almiror Cursos" />
+    <meta property="og:title" content="Desarrolla un reproductor de música tipo Deezer y Spotify | Almiror Cursos" />
+    <meta property="og:image:url"
+        content="https://devbisnesscurso.github.io/page/assets/img/public/slider-opengraf-taller-reproductor-de-musica.jpg" />
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:url" content="https://www.devbisness.com" />
+    <meta property="og:description"
+        content="¡Un proyecto perfecto para principiantes y quienes están comenzando a entender a profundidad!" />
+    <meta property="twitter:site" content="Almiror Cursos" />
+    <meta property="twitter:tittle"
+        content="Desarrolla un reproductor de música tipo Deezer y Spotify | Almiror Cursos" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image"
+        content="https://devbisnesscurso.github.io/page/assets/img/public/slider-opengraf-taller-reproductor-de-musica.jpg" />
+    <meta property="twitter:description"
+        content="¡Un proyecto perfecto para principiantes y quienes están comenzando a entender a profundidad!" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/img/icons-touch/icon-touch-144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/img/icons-touch/icon-touch-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/img/icons-touch/icon-touch-72.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/img/icons-touch/icon-touch-57.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/api-grid.css?v=dev01">
+    <link rel="stylesheet" href="../css/main.css?v=dev01">
+    <script src="../js/emmetjs.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <style>
+        .hljs {
+            background-color: rgba(0, 0, 0, .02);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid aside-content">
+        <header class="header-aside">
+            <div class="aside-action">
+                <a href="../"><img src="../assets/img/logo/logo.svg" alt="" class="logo"></a>
+                <div class="button-menu aside-icon-menu-none">
+                    <svg class="icon-menu">
+                        <use href="../assets/img/svg/icons.svg#icon-menu" />
+                    </svg>
+                </div>
+            </div>
+            <div class="content-navigations-aside">
+                <nav class="nav-aside">
+                    <div class="conten-teacher-aside">
+                        <div class="img-avatar-aside-teacher">
+                            <img src="../assets/img/public/julio.jpg" alt="Profesor Julio Quiñones Aranda">
+                        </div>
+                        <div class="skill-aside-teacher">
+                            <h3 class="small name-aside-teacher m-0">
+                                Julio Quiñones
+                            </h3>
+                            <p class="profesion-aside-teacher m-0">
+                                Desarrollador del software
+                            </p>
+                            <!--<p class="profesion-aside-teacher m-0 color-danger-live">
+                                En vivo ahora
+                            </p>-->
+                        </div>
+                    </div>
+                    <ul class="menu-aside normal">
+                        <li class="aside-item">
+                            <span class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                Primeros pasos
+                                <svg class="icon-dropdown-menu desktop-icon-rotate icon-dropdown-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller show-subemnuaside">
+                                <li class="submenu-item-aside">
+                                    <a href="#que-aprenderas" class="submenu-link-aside">¿Qué aprenderás?</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#enlaces" class="submenu-link-aside">Enlaces</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#requisitos" class="submenu-link-aside">Introducción</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#holamundo" class="submenu-link-aside">Hola Mundo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="aside-item">
+                            <span class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                Sistema de tipos en JAVA
+                                <svg class="icon-dropdown-menu desktop-icon-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller">
+                                <li class="submenu-item-aside">
+                                    <a href="#sistema-de-tipos" class="submenu-link-aside">Sistema de tipos en Java</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#variables" class="submenu-link-aside">Variables</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#datos-primitivos" class="submenu-link-aside">Tipos de Datos Primitivos</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#datos-complejos" class="submenu-link-aside">Tipos de Datos complejos o
+                                        compuestos</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#concatenacion" class="submenu-link-aside">Concatenación</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#arrays" class="submenu-link-aside">Array List</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#scanner" class="submenu-link-aside">Clase Scanner</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#joptionpane" class="submenu-link-aside">JOptionPane</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#constantesfinal" class="submenu-link-aside">Constantes (final)</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="body-taller xl-pr-3 xl-pl-3">
+            <div class="desktop-aside-header">
+                <div class="content-desktop-logo-aside">
+                    <a href="../"><img src="../assets/img/logo/logo.svg" alt="" class="logo"></a>
+                </div>
+                <div class="xxl-space-between">
+                    <h1 class="aside-title m-0 t3 color-title">
+                        Curso: Curso Práctico de Java 11 + y MySQL proyecto final (Sistemas de ventas)
+                    </h1>
+                    <p class="total-views-page smaller"><span class="update-text-scrolling"></span> <span
+                            class="scroll-progressbar-taller"></span></p>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <h2 class="color-text-succes t2 m-0 title-body-aside">
+                        Introducción
+                    </h2>
+                    <p class="color-text small">
+                        Está guía está diseñada para poder obtener el código del curso de una forma amigable y en
+                        español.
+                    </p>
+                </div>
+                <div class="warning-card">
+                    <h3 class="title-warning-card t4">
+                        Aviso
+                    </h3>
+                    <p class="small description-warning-card">
+                        Esta guía está en constante actualización, podría no estar completa.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="que-aprenderas">
+                        ¿Qué aprenderas 🤷‍♂️?
+                    </h2>
+                    <div class="small s-pl-3">
+                        <p class="small color-text relative before-circle">
+                            Conceptos básicos de <strong class="color-primary">Java y Java Swing</strong>
+                        </p>
+                        <p class="small color-text relative before-circle">
+                            Contruiras bases de datos <strong class="color-primary">MySQL</strong> para que mas adelante
+                            construyas sistemas de escritorio o sistemas web con una buena <strong
+                                class="color-primary">Structura</strong>
+                        </p>
+                        <p class="small color-text relative before-circle">
+                            Aprenderas Generar reportes usando <strong class="color-primary">MySQL y Java</strong>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="enlaces">
+                        Enlaces y Recursos
+                    </h2>
+                    <div class="small">
+                        <a href="https://netbeans.apache.org/download/index.html" target="_blank"
+                            class="card-link color-title-offset cross-center relative s-py-1">
+                            <svg class="icon-taller-cards">
+                                <use href="../assets/img/svg/icons.svg#icon-download" />
+                            </svg>
+                            Apache NetBeans 14
+                        </a>
+                        <a href="https://dev.mysql.com/downloads/workbench/" target="_blank"
+                            class="card-link color-title-offset cross-center relative s-py-1">
+                            <svg class="icon-taller-cards">
+                                <use href="../assets/img/svg/icons.svg#icon-download" />
+                            </svg>
+                            MySQL Workbench 8.0.30
+                        </a>
+                        <a href="https://itextpdf.com/resources/downloads" target="_blank"
+                            class="card-link color-title-offset cross-center relative s-py-1">
+                            <svg class="icon-taller-cards">
+                                <use href="../assets/img/svg/icons.svg#icon-download" />
+                            </svg>
+                            Itext
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="requisitos">
+                        Introducción a Java
+                    </h2>
+                    <p class="small color-text">
+                        Como Introducción veremos, ¿Que es Java? aprenderemos a crear nuestra primera Aplicación con
+                        Java, Paquetes en Java
+                        Librerias en Java y Comentarios en Java
+                        <br>
+                    </p>
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="holamundo">
+                        Hola Mundo desde Java
+                    </h2>
+                    <p class="small color-text">
+                        En esta seccion vamos mostrar nuestro primer Hola Mundo desde Java.
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    System.out.println("Hola mundo");
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="sistema-de-tipos">
+                        Sistema de tipos en JAVA
+                    </h2>
+                    <p class="small color-text">
+                        Hablaremos específicamente acerca de los tipos de datos o variables más comunes, sus
+                        características generales, su utilidad, los usos más comunes, entre otras cosas.
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="variables">
+                        Variables
+                    </h2>
+                    <p class="small color-text">
+                        Primero tenemos que conocer el concepto de variable:
+                        <br>
+                        <br>
+                        * En programación una variable es un espacio de memoria el cual nos servirá para almacenar un
+                        tipo de dato con un valor correspondiente.
+                        <br>
+                        * Imagina como una caja que guarda un tipo de dato/valor.
+                    </p>
+                    <img src="https://bluuweb.github.io/desarrollo-web-bluuweb/img/pseint-3.JPG" alt="">
+                    <p class="small color-text">
+                        Ahora que conocemos que son la variables vamos a por lo tipos de datos.👇👇👇
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="datos-primitivos">
+                        Tipos de datos Primitivos
+                    </h2>
+                    <p class="small color-text">
+                        Java posee un total de ocho tipos primitivos, que cubren todo tipo de números (reales o
+                        decimales y enteros) cada uno con una extensión o magnitud máxima, también cubre los valores
+                        lógicos (falso y verdadero) e incluye caracteres.
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Tipo primitivo char
+                    </h2>
+                    <p class="small color-text">
+                        Este tipo de dato permite representar caracteres aislados, es decir, por medio de un único char
+                        no podemos representar palabras completas sino más bien letras individuales. <br>
+                        <strong>Por ejemplo:</strong> La palabra "carácter" estaría conformada por un total de ocho
+                        chars ‘c’, ‘a’, ‘r’, ‘a’, ‘c’, ‘t’, ‘e’ y ‘r’. Un char tiene un peso fijo (independientemente de
+                        la letra) de <strong>16 bit</strong>.
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    char miChar = 'a';
+    System.out.println(miChar);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Tipo boolean
+                    </h2>
+                    <p class="small color-text">
+                        El tipo de dato primitivo boolean nos permite representar valores lógicos o booleanos (falso y
+                        verdadero).
+                        <br><br>
+                        Una variable boolean, solo puede tomar dos posibles valores false (falso) o true (verdadero).
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs">
+    boolean esMayor = true;
+    boolean esMenor = false;
+    System.out.println(esMayor);
+    System.out.println(esMenor);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Tipo de dato byte
+                    </h2>
+                    <p class="small color-text">
+                        Este tipo de datos representa pequeños números enteros (8 bit), puede contener números entre
+                        -128 y 127.
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    byte miByte = 127;
+    System.out.println(miByte);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        El tipo short
+                    </h2>
+                    <p class="small color-text">
+                        Este es usado para representar números enteros más grandes que byte (aunque no demasiado) tiene
+                        un peso de 16 bit y varía entre -32768 y 32767
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    short miShort = 32767;
+    System.out.println(miShort);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Tipo primitivo int
+                    </h2>
+                    <p class="small color-text">
+                        Un tipo int tiene un peso de 32 bit con signo, es decir va desde -2 a la 31 hasta 2 a la 32,
+                        aproximadamente desde -2.147’483.648 hasta 2.147’483.647.
+                        <br>
+                        Generalmente cuando se piensa en un número entero inmediatamente se coloca la variable como tipo
+                        int, sin embargo generalmente int suele ser más grande de lo que llegamos a necesitar,
+                        desperdiciando así algunos bits en memoria.
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int edad = 200;
+    System.out.println(edad);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        El tipo long
+                    </h2>
+                    <p class="small color-text">
+                        El tipo primitivo long es usado para representar números enteros realmente grandes, del orden de -2 a la 63 hasta 2 a la 64. Vemos entonces que un long tiene un tamaño de 64 bit y varía aproximadamente desde -9.223’’372.036.854’775.808 hasta 9.223’’372.036.854’775.807.
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    long miLong = 1500;
+    System.out.println(miLong);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Tipo primitivo float
+                    </h2>
+                    <p class="small color-text">
+                        El tipo float es quizás el segundo más usado, es útil cuando queremos representar números decimales, como por ejemplo resultados de divisiones, raíces o similares. Son también grandes (su tamaño es de 32 bit) y cubren un gran rango de posibles valores.
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    float precio = 150f;
+    System.out.println(precio);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Tipo de dato double
+                    </h2>
+                    <p class="small color-text">
+                        Este tipo es el tipo de dato numérico más grande, con este podemos representar casi cualquier número que necesitemos, es demasiado improbable que necesitemos un número que supere la capacidad de éste (aunque existen unos pocos casos en los que sí), tienen un peso de 64 bit.
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    double resultadoConsulta = 100000000.50;
+    System.out.println(resultadoConsulta);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="datos-complejos">
+                        Tipos complejos o compuestos en java
+                    </h2>
+                    <p class="small color-text">
+                        Entre los tipos de datos complejos o compuestos podemos indentificar 3 tipos. <br>
+                        <strong>
+                            * String <br>
+                        * Scanner<br>
+                        * ArrayList
+                        </strong>
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Tipo de dato String (clase String)
+                    </h2>
+                    <p class="small color-text">
+                        Una variable de tipo String almacenará una cadena de caracteres, no es necesario el uso del comando new para crear objetos de tipo String, basta con poner la cadena entre comillas dobles "palabra" e igualarla con una variable de tipo String y con eso bastará.
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+String cadena = “Chanchito Feliz”;
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Inicialización de cadenas
+                    </h2>
+                    <p class="small color-text">
+                        <strong>Literal cadena</strong>    Podemos utilizar new para crear y asignar un valor a una variable de tipo String:
+
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = new String(“Cadena literal”);
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                        Lo que ocurre es que la clase String es tan habitual que java permite crear y asignar de forma abreviada, funcionalmente idéntica al anterior
+
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo 👇</strong>
+                        <div class="small">
+                            <div class="container-iframe-code">
+                                <pre><code class="hljs languaje-java">
+    String cadena = “Chanchito feliz;
+        </code></pre>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Comparación de String
+                    </h2>
+                    <p class="small color-text">
+                        Haveces vamos a quere comparar una cadena con otra y en este curso vamos cubrir los dos tipos de comparación.
+                        <br>
+                        <strong>01: Igualdad:</strong> En el tipo de comparacíon por igualdad tenemos a <strong>equals(), equalsIgnoreCase(), regionMatches().</strong>
+                        <br>
+                        <br>
+                        <strong>02: Comparación alfabética:</strong> En ocaciones vamos a tener que comparar de forma alfabética, es decir, saber qué cadena iría antes en un diccionario y para eso tenemos a <strong>compareTo(), compareToIgnoreCase().</strong>
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        boolean equals(String cadena)
+                    </h2>
+                    <p class="small color-text">
+                        Compara el contenido de la palabra que invoca el método y de otra cadena. El resultado de la comparación nos dara el resultado de <strong>true o false</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena1 = "hola mundo";
+    String cadena2 = "hola mundo";
+    String cadena3 = "hola mundo de java";
+    boolean esigual;
+    esigual = cadena1.equals(cadena2);
+    esigual = cadena2.equals(cadena3);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        boolean equalsIgnoreCase(String cadena)
+                    </h2>
+                    <p class="small color-text">
+                        Funciona al igual que equals pero sin tener en cuenta las mayúsculas y las minúsculas. El resultado de la comparación nos dara el resultado de <strong>true o false</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena1 = "hola mundo";
+    String cadena2 = "holA mundo";
+    boolean esigual;
+    esigual = cadena1.equals(cadena2); //false
+    esigual = cadena1.equalsIgnoreCase(cadena2); //true
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        boolean regionMatches(int inicio, String cadena, int inicioOtraCadena, int num)
+                    </h2>
+                    <p class="small color-text">
+                        Compara dos fragmentos de cadenas. El resultado de la comparación nos dara el resultado de <strong>true o false</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    boolean b;
+    String cadena = "hola mundo";
+    String cadena1 = "hola mundo de java";
+    b = cadena.regionMatches(5, cadena1,5,5); //true
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Comparación alfabética
+                    </h2>
+                    <p class="small color-text">
+                        Otra forma de comparar dos cadenas es hacerlo de forma alfabética.
+                        <br>
+                        <br>
+                        Una cadena se considera alfabéticamente menor que otra si en un diccionario va antes y para eso tenemos a <strong>compareTo(), compareToIgnoreCase().</strong>
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        int compareTo
+                    </h2>
+                    <p class="small color-text">
+                        Compara alfabéticamente la cadena invocante y la que se pasa como parámetro, dovolviendo un entero cuyo valor determina el orden de las cadenas.
+                        <br>
+                        <strong>0 </strong> si las cadenas comparadas son iguales
+                        <br>
+                        <strong>Negativo </strong> si la cadena comparada es menor alfabéticamente
+                        <br>
+                        <strong>Positivo </strong> si la cadena comparada es Mayor alfabéticamente
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena1 = "Alondra";
+    String cadena2 = "Simón";
+    String cadena3 = "Juan";
+    System.out.println(cadena2.compareTo(cadena1)); // valor mayor que 0
+    System.out.println(cadena1.compareTo(cadena3)); // valor menor que 0
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        int compareToIgnoreCase
+                    </h2>
+                    <p class="small color-text">
+                        Realiza una comparación alfabética sin distinguir mayúsculas ni minúsculas.
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena1 = "Alondra";
+    String cadena2 = "simón";
+    String cadena3 = "Juan";
+    System.out.println(cadena2.compareTo(cadena1)); // valor mayor que 0
+    System.out.println(cadena1.compareTo(cadena3)); // valor menor que 0
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Obtención de Caracteres
+                    </h2>
+                    <p class="small color-text">
+                        Todos los caracteres que forman una cadena pueden ser identificados mediante la posicion que ocupan.
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        char charAt()
+                    </h2>
+                    <p class="small color-text">
+                        Devuelve el caracter que ocupa el indice <strong>posicion</strong> en la cadena que invoca el método.
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "chanchito feliz";
+    System.out.println(cadena.charAt(5)); //muestra el carácter 'h'
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title m-0 title-body-aside">
+                        Obtencion de una subcadena
+                    </h2>
+                    <p class="small color-text">
+                        Una subcadena es un fragmento de una cadena, es decir, un subconjunto consecutivo de caracteres que forman parte de una cadena.
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        String substring()
+                    </h2>
+                    <p class="small color-text">
+                        Devuelve la subcadena formada desde la posición <strong>inicio</strong> hasta el fina de la cadena.
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "chanchito feliz, está comiendo";
+    System.out.println(cadena.substring(10)); // cadena = 'feliz, está comiendo'
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        String substring(int inicio, int fin)
+                    </h2>
+                    <p class="small color-text">
+                        Hace lo mismo que subString(), devolviendo la cadena comprendida entre los indices <strong>inicio y fin</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "chanchito feliz, está comiendo";
+    System.out.println(cadena.substring(10,15)); // cadena = 'feliz'
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        String trim()
+                    </h2>
+                    <p class="small color-text">
+                        Devuelve una copia de la cadena elminando, al principio y al final los espacio en <strong>blancos</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "     hola mundo     ";
+    System.out.println(cadena.trim()); // cadena = 'hola mundo'
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Longitud de una Cadena
+                    </h2>
+                    <p class="small color-text">
+                        <strong>length()</strong> Devuelve el numero de caracteres, o longitud de una cadena.
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "hola mundo";
+    System.out.println(cadena.length()); // delvuelve 10
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Comprobación
+                    </h2>
+                    <p class="small color-text">
+                        Con una cadena de caracteres podemos realizar ciertas comprobaciones, por ejemplo si la cadena esta vacía, si contiene una subcadenas, si comienza con un determinado prefijo o si termina en un sufijo dado.
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Cadena vacía
+                    </h2>
+                    <p class="small color-text">
+                        Es aquella que no esta conformada por ningun caracter, y se representa con <strong>""</strong> y validar si la cadena que estamos comparando esta vacía usaremos el método <strong>isEmpty()</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "";
+    System.out.println(cadena.isEmpty()); // true
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Contiene
+                    </h2>
+                    <p class="small color-text">
+                        Si necesitamos comprobar si una cadena contiene , en cualquier posición, otra subcadena, disponemos del método.
+                        <br>
+                        <strong>contains()</strong>
+                    </p>
+                    <h2 class="color-title t3 m-0" id="header-reproductor">
+                        boolean contains()
+                    </h2>
+                    <p class="small color-text">
+                        Devuelve true si en la cadena invocante se encuentra, literalmente, la subcadena en cualquier posición.
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "En algún lugar de la tierra";
+    System.out.println(cadena.contains("tierra")); // true
+    System.out.println(cadena.contains("oceano")); // false
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Prefijos y Sufijos
+                    </h2>
+                    <p class="small color-text">
+                        UN prefijo o un sufijo no es mas que una subcadena que va al principio o al final de una cadena. Para ello disponemos de los métodos:
+                        <br>
+                        <strong>* startsWith()</strong>
+                        <br>
+                        <strong>* endsWith()</strong>
+                    </p>
+                    <h2 class="color-title t3 m-0">
+                        boolean startsWith()
+                    </h2>
+                    <p class="small color-text">
+                        Comprueba si la cadena que invoca el método comienza con la cadena que se pasa por parámetro.
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "En algún lugar de la tierra";
+    System.out.println(cadena.startsWith("En")); // true
+    System.out.println(cadena.startsWith("algún")); // false
+    </code></pre>
+                        </div>
+                    </div>
+                    <h2 class="color-title t3">
+                        boolean endsWith()
+                    </h2>
+                    <p class="small color-text">
+                        Comprueba si la cadena que invoca el método termina con la cadena que se pasa por parámetro.
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "En algún lugar de la tierra";
+    System.out.println(cadena.endsWith("rra")); // true
+    System.out.println(cadena.endsWith("En")); // false
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Conversión
+                    </h2>
+                    <p class="small color-text">
+                        Una cadena puede transformarse sustituyendo todas la letras que la componen a minúsculas o a mayúsculas, lo que resulta util a la hora de procesar. 
+                        <br>
+                        Para realizar esta operación disponde de: <br>
+                        <strong>* toLowerCase()</strong> <br>
+                        <strong>* toUpperCase()</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String minuscular = "HOLA MUNDO";
+    String mayusculas = "hola mundo";
+    System.out.println(minuscular.toLowerCase()); // devuelve 'hola mundo'
+    System.out.println(mayusculas.toUpperCase()); // devuelve 'HOLA MUNDO'
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Replace
+                    </h2>
+                    <p class="small color-text">
+                        El método <strong>replace()</strong> permite convertir todas la ocurrencias de un caracter de una cadena en otro distinto.
+                    </p>
+                    <h2 class="color-title t3">
+                        String replace()
+                    </h2>
+                    <p class="small color-text">
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String cadena = "Hola mundo";
+    System.out.println(cadena.replace('o', '\u2661')); // devuelve 'H♡la mund♡'
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="concatenacion">
+                        Concatenación
+                    </h2>
+                    <p class="small color-text">
+                        Mas de una oación vamos quere unir una cadena con otro y para eso el operador <strong>+</strong> sirve para unir, o concatenar dos o mas cadenas.
+                        <br>
+                        <strong>Código de ejemplo👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String hola = "Hola";
+    String mundo = "Mundo";
+    System.out.println(hola +" "+ mundo);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE--><div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="arrays">
+                        ArrayList
+                    </h2>
+                    <p class="small color-text">
+                        La clase ArrayList en Java, es una clase que permite almacenar datos en memoria de forma similar a los Arrays, con la ventaja de que el numero de elementos que almacena, lo hace de forma dinámica, es decir, que no es necesario declarar su tamaño como pasa con los Arrays.
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    ArrayList miArray = new ArrayList();
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="scanner">
+                        Scanner
+                    </h2>
+                    <p class="small color-text">
+                        <strong>Scanner</strong> Es una API  que se utiliza de forma estática, es decir necesita del operador <strong>new</strong>, y la forma de trabajar con ella siempre es la misma.
+                        <br>
+                        <strong>Código de ejemplo👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    Scanner nombredelscanner = new Scanner(System.in);
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                        <strong>System</strong> indica que vamos a leer el teclado.
+                        <br>
+                        <br> Los métodos de Scanner son los siguiente: <br>
+                         <strong>1: nextInt()</strong>: Lee un número entero por teclado. <br>
+                         <strong>2: nexDouble()</strong>: Lee un número real (double) <br>
+                         <strong>3: nextLine()</strong>: Lee una cadena de caracteres hasta que le pulsa la tecla Intro.
+                         
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="constantesfinal">
+                        Constantes en JAVA
+                    </h2>
+                    <p class="small color-text">
+                        En java es muy simple definir constantes, solo basta con ponerles el modificador final antes de la declaración del tipo. 
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    final tipo VARIABLE = valor;
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/menu-aside.js?v=dev01"></script>
+    <script src="../js/total-view-taller.js" defer></script>
+</body>
+
+</html>

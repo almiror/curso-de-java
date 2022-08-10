@@ -1,0 +1,96 @@
+.taller-card{
+    box-shadow: 0 2px 5px rgba(174,190,205,.2);
+    background-color: var(--bg-light);
+    height: 100%;
+}
+.photo-container{
+    border-radius: .5rem .5rem 0 0;
+}
+.taller-card-decription{
+    border-radius: 0 0 .5rem .5rem;
+    border: 1px solid var(--border-color);
+}
+.container-taller-card{
+    padding: 0;
+}
+.teachers-conten-taller{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    right: -2.25rem;
+    bottom: -1rem;
+    min-width: 4.5rem;
+    z-index: var(--z-modal);
+}
+.content-img-teachers-taller{
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background-color: var(--border-color);
+}
+.icon-taller-cards{
+    width: 14px;
+    height: 14px;
+    fill: var(--bg-dark-offset);
+    margin-right: .5rem;
+}
+.photo-container.taller-css-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#59b3f3 0,#0d66a7 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#59b3f3 0,#0d66a7 100%);
+}
+.photo-container.taller-html-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#fa7d47 0,#D84823 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#fa7d47 0,#D84823 100%);
+}
+.photo-container.taller-js-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#ffd256 0,#d39001 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#ffd256 0,#d39001 100%);
+}
+.photo-container.taller-node-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#73ce52 0,#3C803C 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#73ce52 0,#3C803C 100%);
+}
+.photo-container.taller-vue-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#3EAF7C 0,#188d58 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#3EAF7C 0,#188d58 100%);
+}
+.photo-container.taller-react-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#69D9FA 0,#2a8caa 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#69D9FA 0,#2a8caa 100%);
+}
+.photo-container.taller-java-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#3e88d3 0,#1e5994 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#3e88d3 0,#1e5994 100%);
+}
+.photo-container.taller-php-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#8084bb 0,#484C89 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#8084bb 0,#484C89 100%);
+}
+.photo-container.taller-laravel-card{
+    background: -webkit-radial-gradient(50% 50%,88.22% 88.22%,#59b3f3 0,#0d66a7 100%);
+    background: radial-gradient(88.22% 88.22% at 50% 50%,#ff866a 0,#E75B3A 100%);
+}
+.view-namepopup-teacher{
+    position: relative;
+}
+.popupname-teacher{
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 0 .5rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow-alt);
+    background-color: var(--bg-light);
+    visibility: hidden;
+    right: 50%;
+    bottom: -1.5rem;
+    transform: translateX(50%);
+}
+.view-namepopup-teacher:hover .popupname-teacher{
+    visibility: visible;
+}

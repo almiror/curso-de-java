@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Desarrolla un reproductor de música tipo Deezer y Spotify | Dev Bisness Cursos</title>
+    <meta name="author" content="Julio Quiñones Aranda" />
+    <meta name="geo.region" content="PE">
+    <meta name="keywords" content="..." />
+    <meta name="copyright" content="Julio Quiñones Aranda">
+    <meta name="description"
+        content="Usa tus habilidades para crear un excelente portafolio y conseguir el trabajo de tus sueños." />
+    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon/favicon.svg" />
+    <meta name="theme-color" content="#007BDF">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Dev Bisness Cursos">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="../assets/img/favicon/favicon.png">
+    <link rel="apple-touch-startup-image" href="../assets/img/favicon/favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dev Bisness Cursos" />
+    <meta property="og:title"
+        content="Desarrolla un reproductor de música tipo Deezer y Spotify | Dev Bisness Cursos" />
+    <meta property="og:image:url" content="https://devbisnesscurso.github.io/page/assets/img/public/slider-opengraf-taller-reproductor-de-musica.jpg" />
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:url" content="https://www.devbisness.com" />
+    <meta property="og:description"
+        content="¡Un proyecto perfecto para principiantes y quienes están comenzando a entender a profundidad!" />
+    <meta property="twitter:site" content="Dev Bisness Cursos" />
+    <meta property="twitter:tittle"
+        content="Desarrolla un reproductor de música tipo Deezer y Spotify | Dev Bisness Cursos" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://devbisnesscurso.github.io/page/assets/img/public/slider-opengraf-taller-reproductor-de-musica.jpg" />
+    <meta property="twitter:description"
+        content="¡Un proyecto perfecto para principiantes y quienes están comenzando a entender a profundidad!" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/img/icons-touch/icon-touch-144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/img/icons-touch/icon-touch-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/img/icons-touch/icon-touch-72.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/img/icons-touch/icon-touch-57.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/api-grid.css?v=dev01">
+    <link rel="stylesheet" href="../css/main.css?v=dev01">
+    <script src="../js/emmetjs.js"></script>
+</head>
+
+<body>
+    <div class="grid aside-content">
+        <header class="header-aside">
+            <div class="aside-action">
+                <a href="../"><img src="../assets/img/logo/logo.svg" alt="" class="logo"></a>
+                <div class="button-menu aside-icon-menu-none">
+                    <svg class="icon-menu">
+                        <use href="../assets/img/svg/icons.svg#icon-menu" />
+                    </svg>
+                </div>
+            </div>
+            <div class="content-navigations-aside">
+                <nav class="nav-aside">
+                    <div class="conten-teacher-aside">
+                        <div class="img-avatar-aside-teacher">
+                            <img src="../assets/img/public/julio.jpg" alt="Profesor Julio Quiñones Aranda">
+                        </div>
+                        <div class="skill-aside-teacher">
+                            <h3 class="small name-aside-teacher m-0">
+                                Julio Quiñones
+                            </h3>
+                            <p class="profesion-aside-teacher m-0">
+                                Desarrollador del software
+                            </p>
+                            <!--<p class="profesion-aside-teacher m-0 color-danger-live">
+                                En vivo ahora
+                            </p>-->
+                        </div>
+                    </div>
+                    <ul class="menu-aside normal">
+                        <li class="aside-item">
+                            <span href="#" class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                Primeros pasos
+                                <svg class="icon-dropdown-menu desktop-icon-rotate icon-dropdown-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller show-subemnuaside">
+                                <li class="submenu-item-aside">
+                                    <a href="#requisitos" class="submenu-link-aside">Introducción</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#que-aprenderas" class="submenu-link-aside">¿Qué aprenderás?</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#enlaces" class="submenu-link-aside">Enlaces</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estructura-del-proyecto" class="submenu-link-aside">Estructura del
+                                        proyecto</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="aside-item">
+                            <span href="#" class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                Estructura html
+                                <svg class="icon-dropdown-menu desktop-icon-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller">
+                                <li class="submenu-item-aside">
+                                    <a href="#header-reproductor" class="submenu-link-aside">Header</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#playlist" class="submenu-link-aside">Playlist</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#controles-reproductor" class="submenu-link-aside">Controles</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#add-favoritos" class="submenu-link-aside">Modal añadir favoritos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="aside-item">
+                            <span href="#" class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                Estilos css
+                                <svg class="icon-dropdown-menu desktop-icon-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller">
+                                <li class="submenu-item-aside">
+                                    <a href="#cssbase-reproductor" class="submenu-link-aside">Css base</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-header-reproductor" class="submenu-link-aside">Estilos header</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-playlist-reproductor" class="submenu-link-aside">Estilos playlist</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">Estilos para controles</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="aside-item">
+                            <span href="#" class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                JavaScript
+                                <svg class="icon-dropdown-menu desktop-icon-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller">
+                                <li class="submenu-item-aside">
+                                    <a href="#cssbase-reproductor" class="submenu-link-aside">
+                                        Creando API
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-header-reproductor" class="submenu-link-aside">
+                                        Consumo del nuestra api
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-playlist-reproductor" class="submenu-link-aside">
+                                        Insertar audio al DOM
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        Reproducir al darl en el item
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        Función tiemp transcurrido
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        Función duración del audio
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        Play y pause
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        Siguiente canción
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        Retroceder audio
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        Siguiente audio automatico
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        handler audio
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        Añadir a favoritos
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#estilos-controles-reproductor" class="submenu-link-aside">
+                                        ver favoritos
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="body-taller">
+            <div class="desktop-aside-header">
+                <div class="content-desktop-logo-aside">
+                    <a href="../"><img src="../assets/img/logo/logo.svg" alt="" class="logo"></a>
+                </div>
+                <div class="xxl-space-between">
+                    <h1 class="aside-title m-0 t3 color-title">
+                        Taller: Desarrolla un reproductor de música tipo Deezer y Spotify
+                    </h1>
+                    <p class="total-views-page smaller"><span class="update-text-scrolling"></span> <span
+                            class="scroll-progressbar-taller"></span></p>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="requisitos">
+                        Introducción
+                    </h2>
+                    <p class="color-text small">
+                        Está guía está diseñada para poder obtener el código del taller Reproductor de musica (Html,
+                        Css,
+                        JavaScript) de una forma amigable y en español.
+                    </p>
+                </div>
+                <div class="warning-card">
+                    <h3 class="title-warning-card t4">
+                        Aviso
+                    </h3>
+                    <p class="small description-warning-card">
+                        Esta guía está en constante actualización, podría no estar completa.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="que-aprenderas">
+                        ¿Qué aprenderas 🤷‍♂️?
+                    </h2>
+                    <div class="small s-pl-3">
+                        <p class="small color-text relative before-circle">
+                            Conceptos básicos de <strong class="color-primary">git y github</strong>
+                        </p>
+                        <p class="small color-text relative before-circle">
+                            Contruiras una buena semántica  <strong class="color-primary">html</strong> para que mas adelante construyas páginas o sistemas web con un buen <strong class="color-primary">SEO</strong>
+                        </p>
+                        <p class="small color-text relative before-circle">
+                            Aprenderas lo más nuevo de  <strong class="color-primary">JavaScript</strong>
+                        </p>
+                        <p class="small color-text relative before-circle">
+                            Contruiras un buen <strong class="color-primary">CSS</strong> y con una buena arquitectura
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="enlaces">
+                        Enlaces
+                    </h2>
+                    <div class="small">
+                        <a href="https://code.visualstudio.com/" target="_blank"
+                            class="card-link color-title-offset cross-center relative s-py-1">
+                            <svg class="icon-taller-cards">
+                                <use href="../assets/img/svg/icons.svg#icon-download" />
+                            </svg>
+                            Instalar Visual Studio Code
+                        </a>
+                        <a href="https://git-scm.com/downloads" target="_blank"
+                            class="card-link color-title-offset cross-center relative s-py-1">
+                            <svg class="icon-taller-cards">
+                                <use href="../assets/img/svg/icons.svg#icon-download" />
+                            </svg>
+                            Instalar Git
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="estructura-del-proyecto">
+                        Estructura principal del proyecto
+                    </h2>
+                    <p class="small color-text">
+                        Para empezar a trabajar a construir nuestro proyecto vamos a organizar las carpetas de nuestro proyecto. <br>
+                        Empezaremos creando la carpeta principal que le llamaremos <Strong>small-music</Strong>, luego seguiremos creando las demas sub carpetas como se aprecia en la imagen.👇👇👇
+                    </p>
+                    <div class="small">
+                        <img src="../assets/img/public/estructura-reproductor-de-musica.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside">
+                        Archivo principal (Index)
+                    </h2>
+                    <p class="small color-text">
+                        Nuestro archivo index sera el documento principal donde vamos a trabajar con todo los elementos HTML
+                        <br>
+                        Aquí crearemos nuestros <strong>header,playlist,poster</strong>, etc
+                    </p>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="header-reproductor">
+                        Header
+                    </h2>
+                    <p class="small color-text">
+                        En esta seccion vamos a crear todo los items de navegación de nuestro proyecto
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre>
+                                <code class="code-light">
+&lt;header class="header"&gt;
+&lt;h1 class="logo"&gt;
+    ♫ SMALL MUSIC
+&lt;/h1&gt;
+&lt;div class="subscription"&gt;
+    &lt;p class="c-description"&gt;
+        Estás disfrutando de SMALL MUSIC Free. Suscríbete y sáltate gratis los anuncios durante 1 mes.
+    &lt;/p&gt;
+    &lt;a href="#" class="btn-subscription"&gt;SUSCRIBIRSE&lt;/a&gt;
+&lt;/div&gt;
+&lt;nav class="nav"&gt;
+    &lt;ul&gt;
+        &lt;li class="cross-center"&gt;
+            &lt;a href="#" class="nav-link"&gt;
+                &lt;svg class="icon-menu"&gt;
+                    &lt;use href="./img/svg/icons.svg#icon-music" /&gt;
+                &lt;/svg&gt;
+                Música
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="cross-center"&gt;
+            &lt;a href="#" class="nav-link"&gt;
+                &lt;svg class="icon-menu"&gt;
+                    &lt;use href="./img/svg/icons.svg#icon-podcasts" /&gt;
+                &lt;/svg&gt;
+                Podcasts
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="cross-center"&gt;
+            &lt;a href="#" class="nav-link"&gt;
+                &lt;svg class="icon-menu"&gt;
+                    &lt;use href="./img/svg/icons.svg#icon-box" /&gt;
+                &lt;/svg&gt;
+                Explorar
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="cross-center" id="favoritos"&gt;
+            &lt;a href="#" class="nav-link"&gt;
+                &lt;svg class="icon-menu"&gt;
+                    &lt;use href="./img/svg/icons.svg#icon-heart" /&gt;
+                &lt;/svg&gt;
+                Favoritos
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="cross-center"&gt;
+            &lt;a href="#" class="nav-link"&gt;
+                &lt;svg class="icon-menu"&gt;
+                    &lt;use href="./img/svg/icons.svg#icon-search" /&gt;
+                &lt;/svg&gt;
+                Buscar
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="playlist">
+                        Playlist
+                    </h2>
+                    <p class="small color-text">
+                        Aqui insertaremos nuestro contenido de <strong>audio</strong> asi que tenemos que hacer un buena estructura para poder trabajar con <strong>JavaScript</strong> al momento de reproducir, avanzar y retroceder nuestra canción
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre>
+                                <code class="code-light">
+&lt;div class="main"&gt;
+&lt;div class="bc-shadow"&gt;&lt;/div&gt;
+&lt;div class="conten-playlist"&gt;
+    &lt;h2 class="title-playlit"&gt;Top Canciones&lt;/h2&gt;
+    &lt;div class="conten-song"&gt;
+        &lt;ul id="music-conten"&gt;
+            
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="controles-reproductor">
+                        Controles del reproductor
+                    </h2>
+                    <p class="small color-text">
+                        Creamos la estructura de los controles <strong>play, nex, prev</strong> y a las vez creamos la estructura donde estará la linea de tiempo del <strong>audio</strong> la duración y el tiempo que esta transcurriendo y por ultimo en esta sección añadiremos la estructura de la información del audio que se esta reproduciendo (<strong>nombre del artista, titulo del canción, y el poster del audio</strong> )
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre>
+                                <code class="code-light">
+&lt;div class="controls"&gt;
+    &lt;div class="controls-button"&gt;
+        &lt;button class="prev" id="prev"&gt;
+            &lt;svg class="icon-prev"&gt;
+                &lt;use href="./img/svg/icons.svg#icon-actions" /&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+        &lt;button class="play" id="play"&gt;
+            &lt;svg class="icon-play"&gt;
+                &lt;use href="./img/svg/icons.svg#icon-play" /&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+        &lt;button class="next" id="next"&gt;
+            &lt;svg class="icon-next"&gt;
+                &lt;use href="./img/svg/icons.svg#icon-actions" /&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class="state-music"&gt;
+        &lt;div class="time" id="time-current"&gt;
+            00:00
+        &lt;/div&gt;
+        &lt;div class="bar-state"&gt;
+            &lt;div class="progress-bar" id="progress-bar"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="time" id="time"&gt;
+            00:00
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="informations-music"&gt;
+        &lt;div class="poster"&gt;
+            &lt;img src="./img/poster/placeholder.jpg" alt="Poster Singer" id="poster-singer"&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;h2 class="title" id="title"&gt;
+                -----
+            &lt;/h2&gt;
+            &lt;p class="singer" id="singer"&gt;
+                ---
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="add-favoritos">
+                        Modal añadir a favoritos
+                    </h2>
+                    <p class="small color-text">
+                        Creamos la estructura del modal para mostrar al momento de añadir un <strong>audio</strong> a la sección del <strong>favoritos</strong>
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre>
+                                <code class="code-light">
+&lt;div class="modal"&gt;
+    Canción añadida a favoritos
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="cssbase-reproductor">
+                        Css base para iniciar el proyecto
+                    </h2>
+                    <p class="small color-text">
+                        Reseteamos los estilos por defecto que trae el navegador.
+                        <br>
+                        Creamos nuestras variables <strong>css</strong>
+                        para luego reutilizar en el desarrollo del proyecto.
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre>
+                                <code class="code-light">
+*,
+:after,
+:before{ 
+    box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    line-height: 1.6;   
+    font-family: var(--font-description);
+}
+img{
+    max-width: 100%;    
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    border-style: none;
+}
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* VARIABLES */
+:root {
+    --light                 :#ffffff;
+    --c-text                :#72727d;
+    --primary               :#121216;
+    --primary-alter         :#191922;
+    --primary-intermediate  :#23232d;
+    --terciario             :#FB504F;
+    --font-title            :'Raleway', sans-serif;
+    --font-description      :'Open Sans', sans-serif;
+}
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="estilos-header-reproductor">
+                        Estilos header
+                    </h2>
+                    <p class="small color-text">
+                        Añadimos estilos a nuestro <strong>header</strong> 
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre>
+                                <code class="code-light">
+.header{
+    background-color: var(--primary-alter);
+    padding: 2rem 1rem;
+    border-right: 1px solid rgba(255,255,255,.1);
+}
+.logo{
+    color: var(--light);
+    font-family: var(--font-title);
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0 0 3rem;
+}
+.icon-menu{
+    width: 15px;
+    height: 15px;
+    margin-right: 0.5rem;
+    fill: var(--light);
+    transition: all .2s;
+}
+.nav-link{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--light);
+    transition: all .2s;
+    margin-bottom: 1rem;
+    font-size: 1.05em;
+    font-family: var(--font-title);
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+.nav-link:hover .icon-menu{
+    fill:var(--terciario);
+}
+.nav-link:hover{
+    color: var(--terciario);
+}
+.subscription{
+    background-image: linear-gradient(
+        56deg,#e73600 13%,#ff9100);
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: var(--light);
+    margin-bottom: 3rem;
+}
+.c-description{
+    margin: 0;
+    font-size: .85em;
+}
+.btn-subscription{
+    border: 1px solid var(--light);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--light);
+    font-size: .85em;
+    display: block;
+    margin: 0.5rem auto;
+    text-align: center;
+    transition: all .2s;
+}
+.btn-subscription:hover{
+    background-color: rgba(255,255,255,.2);
+}
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="estilos-playlist-reproductor">
+                        Estilos playlist
+                    </h2>
+                    <p class="small color-text">
+                        Estilos para los <strong>items del audio, poster, etc</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre>
+                                <code class="code-light">
+.main{
+    background-color: var(--primary);
+    overflow-y: scroll;    
+    background-image: url("../img/slider/slider.jpg");
+    background-size: cover;
+    background-position: 0 -260px;
+    background-repeat: no-repeat;
+}
+.bg-favoritos{
+    background-image: url("../img/slider/slider-like.jpg");
+    background-size: cover;
+    background-position: 0 -350px;
+}
+.main::-webkit-scrollbar{
+    width: 8px;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+.main::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(27, 38, 44,.1);
+    box-shadow: inset 0 0 6px rgba(27, 38, 44,.1);
+    background-color: rgba(255,255,255,.1);
+    border-right: 10px solid rgba(27, 38, 44,.1);
+}
+.main::-webkit-scrollbar-thumb:hover,
+.main::-webkit-scrollbar-thumb:active {
+    background-color: var(--border-color-alt);
+}
+.bc-shadow{
+    height: 300px;    
+    box-shadow: 0 -70px 40px var(--primary) inset;
+}
+.conten-playlist{
+    padding: 2rem 2rem  6rem;
+    background-color: var(--primary);
+    transform: translateY(-10px);
+}
+.title-playlit{
+    font-size: 1.65em;
+    font-family: var(--font-title);
+    color: var(--light);
+}
+.conten-song{
+    background-color: var(--primary-intermediate);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+.music-item{
+    display: grid;
+    grid-template-columns: 50px 60px 1fr 50px 50px;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .2s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.music-item::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,.1);
+    position: absolute;
+    bottom: 0;
+}
+.music-item:hover{
+    background-color: var(--primary-alter);
+}
+.poster-songs{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.icon-play-song,
+.icon-like{
+    fill:var(--light);
+    width: 14px;
+    height: 14px;
+}
+
+.play-action,
+.like{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number-music{
+    font-family: var(--font-title);
+    color: var(--light);
+    font-size: 1.25em;
+}
+.icon-play-song{
+    display: none;
+}
+.like:hover{
+    background-color: var(--primary);
+}
+.music-item:hover .icon-play-song{
+    display: block;
+    fill: var(--primary-alter);
+}
+.music-item:hover .number-music{
+    display: none;
+}
+.music-item:hover .play-action{
+    background-color:var(--light)
+}
+.active-list{
+    background-color: var(--primary-alter);
+}
+.modal{
+    background-color: var(--primary);
+    color: var(--light);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    z-index: 90;
+    border-radius: 5px 5px 0 0;
+    font-size: .85rem;
+    transition: all .2s ease-in-out;
+    border: 1px solid rgba(255,255,255,.1);
+}
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h2 class="color-title t3 m-0 title-body-aside" id="estilos-controles-reproductor">
+                        Estilos de los controles del reproductor
+                    </h2>
+                    <p class="small color-text">
+                        Estilos a los botones de control del audio, duración, linea de tiempo y la información del audio.
+                        <br>
+                        <br>
+                        <strong>Codigo fuente aqui👇👇👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre>
+                                <code class="code-light">
+.controls{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-intermediate);
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 210px 1fr 400px;
+    border-top: 1px solid rgba(255,255,255,.2);
+    z-index: 100;
+}
+.controls-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 0;
+}
+.icon-prev,
+.icon-play,
+.icon-next{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    fill:var(--light);
+}
+.icon-prev,
+.icon-next{
+    width: 14px;
+    height: 14px;
+}
+.icon-prev{
+    transform: rotate(-180deg);
+}
+.prev,
+.next,
+.play{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .2s;
+}
+.play{
+    width: 45px;
+    height: 45px;
+
+}
+.prev,
+.play,
+.next{
+    background-color: transparent;
+}
+.prev:hover{
+    background-color: rgba(255,255,255,.1);
+}
+.next:hover{
+    background-color: rgba(255,255,255,.1);
+}
+.play:hover{
+    background-color: rgba(255,255,255,.1);
+}
+.informations-music{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 2rem;
+}
+.poster{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    border: 3px solid rgba(255,255,255,.04);
+}
+.title,
+.singer{
+    margin: 0;
+    font-size: 1em;
+    color: var(--light);
+}
+.singer{
+    font-size: .85em;
+    color: var(--c-text);
+}
+.state-music{
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+.time{
+    font-size: .75em;
+    color: var(--c-text);
+}
+.time:last-child{
+    text-align: right;
+}
+.bar-state{
+    height: 4px;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.bar-state:hover {
+    height: 6px;
+}
+.progress-bar{
+    height: 100%;
+    width: 0;
+    background-color: #ff3c00;
+    position: relative;
+}
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/menu-aside.js?v=dev01"></script>
+    <script src="../js/total-view-taller.js" defer></script>
+</body>
+
+</html>
