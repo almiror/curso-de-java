@@ -15,9 +15,20 @@ show.addEventListener('click', () => {
 
 showdropdown.addEventListener('click', e => {
     if(e.target.tagName === "SPAN" && e.target.classList.contains('menu-link-aside')) {
-        e.target.parentNode.children[1].classList.toggle('show-subemnuaside')
-        e.target.children[0].classList.toggle('icon-dropdown-rotate')
-        console.log(e.target.parentNode.children[1].children)
+        const shows = e.target.parentNode.children[1]
+        const dropdown = e.target.children[0]
+        
+        const asidesItems = document.querySelectorAll('.show-subemnuaside')
+        asidesItems.forEach(element => {
+            element.classList.remove('show-subemnuaside')
+            dropdown.classList.remove('icon-dropdown-rotate')
+        });
+        const icons = document.querySelectorAll('.icon-dropdown-rotate')
+        icons.forEach(element => {
+            element.classList.remove('icon-dropdown-rotate')
+        });
+        shows.classList.add('show-subemnuaside')
+        dropdown.classList.add('icon-dropdown-rotate')
     }
     if(e.target.tagName === "A" && e.target.classList.contains('submenu-link-aside')) {
         const asidesItems = document.querySelectorAll('.submenu-link-aside')

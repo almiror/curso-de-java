@@ -153,6 +153,57 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="aside-item">
+                            <span class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                Condicionales
+                                <svg class="icon-dropdown-menu desktop-icon-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller">
+                                <li class="submenu-item-aside">
+                                    <a href="#condicionales" class="submenu-link-aside">¿Qué son la condicionales?</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#condicional-if" class="submenu-link-aside">
+                                        Condicional if
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#condicional-ifelse" class="submenu-link-aside">
+                                        Condicional if-else
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#condicional-terniario" class="submenu-link-aside">
+                                        Operador terniario
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#anidacion-de-condicion" class="submenu-link-aside">
+                                        Anidación de condiciones
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#condicional-switch" class="submenu-link-aside">
+                                        Condicional Switch
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="aside-item">
+                            <span class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                Arrays
+                                <svg class="icon-dropdown-menu desktop-icon-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller">
+                                <li class="submenu-item-aside">
+                                    <a href="#arrays-java" class="submenu-link-aside">¿Qué es un array?</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -1078,6 +1129,306 @@ String cadena = “Chanchito Feliz”;
                         <div class="container-iframe-code">
                             <pre><code class="hljs languaje-java">
     final tipo VARIABLE = valor;
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="condicionales">
+                        Condicionales
+                    </h2>
+                    <p class="small color-text">
+                        Una condición no es mas que el resultado de la evaluación de un expreción relacional y/o lógica. <br>
+                        En <strong>Java</strong> existen dos valores literales que representan estos valores: <strong>true y false.</strong>
+                    </p>
+                    <h2 class="color-title normal m-0">
+                        Operadores relacionales
+                    </h2>
+                    <p class="small color-text">
+                        Son aquellos que comparan expresiones numéricas para generar valores booleanos
+                    </p>
+                    <img src="../assets/img/public/operadores-relacionales.png" alt="">
+                    <h2 class="color-title normal">
+                        Operadores lógicos
+                    </h2>
+                    <p class="small color-text">
+                        Con estos condiciones podemos construir condi mas complejas, ya que estos operadores generan valores booleanos
+                    </p>
+                    <img src="../assets/img/public/operadores-logicos.png" alt="">
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="condicional-if">
+                        Condicional simple if
+                    </h2>
+                    <p class="small color-text">
+                        La instrucción <strong>if</strong> proporciona un control sobre un conjunto de instrucciones que pueden ejecutarse o no, dependiendo de la evaluación de una condición.
+                        <br>
+                        🔔 Este bloque de instrucciones pueden albergar cualquier tipo de sentencia, incluido otro if.
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    if(condicion){
+        bloque de instrucción
+        ...
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                        👨🏻‍🏫 Un bloque de código es un conjunto de sentencias delimitadas mediante llaves <strong>({})</strong>
+                    </p>
+                    <h2 class="color-title t3">
+                        Ambito de variables
+                    </h2>
+                    <p class="small color-text">
+                        Se le denomina ámbito de variables al lugar o bloque donde es posible utilizar una variable y se denominan 
+                        <strong>variable locales </strong> y <strong>variable de bloque </strong>
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>                    
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    String varLocal = "hola mundo";
+    if(condicion){
+        String varBloque = "hola juan";
+        ...
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="condicional-ifelse">
+                        Condicional doble if-else
+                    </h2>
+                    <p class="small color-text">
+                        Existe otra versión de la sentencia <strong>if</strong>, se denomina <strong>if-else</strong> donde se especifican dos bloques.
+                        <br>
+                        <strong>1:</strong> El primer (bloque true) se ejecutara cuando la condición resulte verdadera.
+                        <br>
+                        <br>
+                        <strong>2:</strong> El Segundo (bloque false) se ejecutara cuando la condición resulte falsa.
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    if(condicion){
+        bloque true // se ejecuta cuando la condición el verdadera
+    } else {
+        bloque false // se ejecuta cuando la condición el falsa
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="condicional-terniario">
+                        Operador terniario
+                    </h2>
+                    <p class="small color-text">
+                        Un operador terniario permite seleccionar un valor de entre dos posibles condiciones, dependiendo de la evaluación de una empresion, segun sea <strong>true</strong> o <strong>false</strong>
+                        <br>
+                        🔔 Es recomendable utilizar el operador terniario, por legibilidad y economía del código en lugar de <strong>if-else</strong>
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    variable = exprecion ? true /*Si la condicion es verdadera*/ : false /*Si la condicion es falsa*/ 
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="anidacion-de-condicion">
+                        Anidación de condiciones
+                    </h2>
+                    <p class="small color-text">
+                        La anidación de condiciones hace que las comprobaciones sean excluyentes, y resulta un código mas eficiente
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int a = 8;
+    if(a  == 1) {
+        System.out.println("Hola");
+    } else {
+        if(a == 5) {
+            System.out.println("Me");
+        } else {
+            if(a == 8) {
+                System.out.println("Alegro");
+            } else {
+                if(a == 9) {
+                    System.out.println("de");
+                } else {
+                    if(a == 11){
+                        System.out.println("Conocerte");
+                    } else {
+                            System.out.println("Sin coincidencias");
+                    }
+                }
+            }
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="condicional-switch">
+                        Condicional múltiple: switch
+                    </h2>
+                    <p class="small color-text">
+                        La evaluación de <strong>expresión</strong> debe de dar un resultado, convertibl entero o un valor de tipo String la dinámica de switch es la siguiente.
+                        <br>
+                        <strong>1:</strong> Evalua la expresion y obtiene su valor <br> <br>
+                        <strong>2:</strong> Comrueba si el valor obtenido coincide con el valor de la expresión del primer caso y así susecivamente <br> <br>
+                        <strong>3:</strong> Si no coincide, sigue comprobando las expresiones de los siguientes <strong>case</strong> <br> <br>
+                        <strong>4:</strong> Si el valor obtenido coincide con el valor de la expreción principal, ejecuta conjunto de instrucciones
+                        <br>
+                        <br>
+                        <strong>Sintaxix 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    switch (expresion) {
+        case expresion 1:
+            conjunto de instrucción 1;
+        case expresion 2:
+            conjunto de instrucción 2;
+        case expresion 3:
+            conjunto de instrucción 3;
+        default:
+            conjunto de instrucción por defecto;
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                       
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int a = 10;
+    switch(a-2){
+        case 1:
+            System.out.println("Hola");
+        case 8:
+            System.out.println("como");
+        case 10:
+            System.out.println("estas");
+        default:
+            System.out.println("Sin coincidencia");
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="arrays-java">
+                        ¿Qué es un array en Java?
+                    </h2>
+                    <p class="small color-text">
+                        Un array es una estructura de datos que nos permite almacenar una gran cantidad de datos de un mismo tipo. <strong class="color-primary">El tamaño de los arrays se declara en un primer momento y no puede cambiar en tiempo de ejecución como puede producirse en otros lenguajes.</strong>
+                        <br>
+                        <br>
+                        <strong>Sintaxix 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    tipo_dato myArray[] =  new tipo_dato[tamanio];
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                       
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int myArray[];
+    myArray = new int[2];
+    myArray[0] = 1;
+    myArray[1] = 2;
+    System.out.println(myArray[0]); // devuelve 1
+    System.out.println(myArray[1]); // devuelve 2
+    </code></pre>
+                        </div>
+                    </div>
+                    <h2 class="color-title normal">
+                        Tamaño del array: .length
+                    </h2>
+                    <p class="small color-text">
+                        Este atributo nos devuelve el número de elementos que posee el array. <strong class="color-primary">Hay que tener en cuenta que es una variable de solo lectura, es por ello que no podremos realizar una asignación a dicha variable. </strong>
+                        <br>
+                        <br>
+                        <strong>Sintaxix 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int myArray[];
+    myArray= new int[2];
+    myArray[0] = 1;
+    myArray[1] = 2;
+    System.out.println(myArray.length); // devuelve 2
+    </code></pre>
+                        </div>
+                    </div>
+                    <h2 class="color-title normal">
+                        Arrays multidimensionales
+                    </h2>
+                    <p class="small color-text">
+                        Una matriz bidimensional puede tener varias filas, y en cada fila no tiene por qué haber el mismo número de elementos o columnas. Por ejemplo, podemos declarar e inicializar la siguiente matriz bidimensional
+                        <br>
+                        <br>
+                        <strong>Sintaxix 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+        int matriz[][];
+        matriz = new int[2][3];
+        matriz[0][0] = 0;  // asignar un valor
+        System.out.print(matriz[0][0]); // obtenenos el valor
     </code></pre>
                         </div>
                     </div>
