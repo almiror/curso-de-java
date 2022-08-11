@@ -218,3 +218,9 @@ body::-webkit-scrollbar-thumb:active {
 .color-text-succes{
     color: var(--bg-succes);
 }
+.color-text-danger{
+    color: var(--bg-danger);
+}
+.color-text-warning{
+    color: var(--bg-warning);
+}

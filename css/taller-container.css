@@ -50,10 +50,11 @@
     font-weight: 600;
 }
 .container-iframe-code{
-    overflow-x: auto;
+    overflow: auto;
     border-radius: .5rem;
     user-select: text;
     box-shadow: var(--box-shadow);
+    /* width: 900px; */
 }
 pre,code{
     margin: 0;

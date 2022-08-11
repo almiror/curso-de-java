@@ -183,10 +183,20 @@
                                     <a href="#anidacion-de-condicion" class="submenu-link-aside">
                                         Anidación de condiciones
                                     </a>
+                                </li>                                
+                                <li class="submenu-item-aside">
+                                    <a href="#condicional-if-else-ejercicios" class="submenu-link-aside color-text-danger">
+                                        Ejercicios con if, if-else
+                                    </a>
                                 </li>
                                 <li class="submenu-item-aside">
                                     <a href="#condicional-switch" class="submenu-link-aside">
                                         Condicional Switch
+                                    </a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#condicional-switch-ejercicios" class="submenu-link-aside color-text-danger">
+                                        Ejercicios con Switch
                                     </a>
                                 </li>
                             </ul>
@@ -201,6 +211,37 @@
                             <ul class="submenu-aside smaller">
                                 <li class="submenu-item-aside">
                                     <a href="#arrays-java" class="submenu-link-aside">¿Qué es un array?</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="aside-item">
+                            <span class="menu-link-aside cross-center menu-spacebeetwen xxl-space-between">
+                                Bucles
+                                <svg class="icon-dropdown-menu desktop-icon-rotate">
+                                    <use href="../assets/img/svg/icons.svg#icon-dropdown" />
+                                </svg>
+                            </span>
+                            <ul class="submenu-aside smaller">
+                                <li class="submenu-item-aside">
+                                    <a href="#bucles-java" class="submenu-link-aside">¿Qué es un bucle?</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#bucles-while" class="submenu-link-aside">Bucle while</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#bucles-do-while" class="submenu-link-aside">Bucle do-while</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#bucles-for" class="submenu-link-aside">Bucle For</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#bucles-anidados" class="submenu-link-aside">Bucles anidados</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#salidas-anticipadas" class="submenu-link-aside">Salida anticipadas</a>
+                                </li>
+                                <li class="submenu-item-aside">
+                                    <a href="#bucles-ejercicios" class="submenu-link-aside color-text-danger">Ejercicios de bucles</a>
                                 </li>
                             </ul>
                         </li>
@@ -1299,6 +1340,60 @@ String cadena = “Chanchito Feliz”;
                         </div>
                     </div>
                 </div>
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="condicional-if-else-ejercicios">
+                        Ejercicios con condicionales if, if-else
+                    </h2>
+                    <p class="small color-text">
+                        Ahora que hemos conocidos los condicionales vamos a ponerlos en practica
+                        <br>
+                        <br>
+                        <strong>Codigo de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    /* 
+    N°1: Implentar un programa que pida por teclado un numero  decimal e indique si es un numero casi cero, 
+    que son aquello positivos o negativos, que se acercan a 0 por menos de 1 unidad, aunque curiosamente el 
+    0 no se considera un número casi-cero:
+    Eplemplo de casi-cero son: 0.3, -0.99 o el 0.125, y numeros que no se consideran casi-cero son 1, -1 o el 10.
+    */
+
+    /* 
+    N°2: pedir dos numero por teclado y mostrarlos ordenados de forma decreciente.
+    */
+
+    /* 
+    N°3: Escribir una aplicacion que indique cuantas cifras tiene un numero entero introducido por teclado,
+    que estara comprendido de 0 a 99,999
+    */
+
+    /* 
+    N°4: Juan,  un empresario que se dedica a la venta de vevidas alcólicas, necesita implementar un sistema 
+    que le ayude a controlar el ingreso de usuarios a su local, para eso el tiene el siguiente requerimiento:
+    1: El sistema debe de pedir la edad del usuario, con ese dato recopilado el sisteama validara si es 
+        menor o es mayor edad, sabiendo que se considera a un usuario adulto a partir de los 17 años.
+    2: Si el usuario es menor de edad el sistema debe de pedir los siguientes datos:
+           nombre,  ubicacion, celular del padre y la autorización para el ingreso del menor.
+    3: Si el usuario es mayor de edad solo debera brindar su nombre y su numero de documento.
+    4: todos los datos solicitados deberan ser mostrados dependiendo si el usuario es menor o mayor de edad
+    */
+
+
+    /* 
+    N°5: Pedir una nota 0 a 10 y mostrarla de la siguiente forma:
+	insuficiente (de 0 a 4)
+	Bien (5)
+	Notable(7 y 8)
+	Sobresaliente (9 y 10)
+    */
+                                
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
                 <!--END CODE-->
                 <div>
                     <!--START CODE-->
@@ -1314,7 +1409,7 @@ String cadena = “Chanchito Feliz”;
                         <strong>4:</strong> Si el valor obtenido coincide con el valor de la expreción principal, ejecuta conjunto de instrucciones
                         <br>
                         <br>
-                        <strong>Sintaxix 👇</strong>
+                        <strong>Sintaxis 👇</strong>
                     </p>
                     <div class="small">
                         <div class="container-iframe-code">
@@ -1356,6 +1451,42 @@ String cadena = “Chanchito Feliz”;
                         </div>
                     </div>
                 </div>
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="condicional-switch-ejercicios">
+                        Ejercicio con la condicional switch
+                    </h2>
+                    <p class="small color-text">
+                        Ahora que hemos conocidos la condicional <strong>switch</strong> vamos a ponerlos en práctica
+                        <br>
+                        <br>
+                        <strong>Ejercicios propuestos 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    /* 
+    N°01:  Idear un programa que solicite al usuario un número comprendido entre 1 y 7, 
+    correspondiente a un dia de la semana, el programa debe de mostrar el nombre
+    del dia de la semana al que corresponde.
+    Por ejemplo: el número 1 corresponde al día lunes
+    */
+
+    /* 
+    N°02: En una granja se compra diariamente una cantidad (comidaDiaria) de comida
+    para alimentar a los animale. El número de animales a alimentar (totas las especies)
+    es (numAnimales), y sabemos que cada animal come una media ed kilosPorAnimal.
+
+    Diseñar un programa que solicite al usuario los valores anteriores y determine si 
+    disponemos de alimento suficiente para cada animal. En caso negativo, ha de calcular
+    cual es la ración que corresponde a cada uno de los animales.
+    Nota: Evitar que la aplicacion realice divisiones por cero
+    */                                
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
                 <!--END CODE-->
                 <div>
                     <!--START CODE-->
@@ -1366,7 +1497,7 @@ String cadena = “Chanchito Feliz”;
                         Un array es una estructura de datos que nos permite almacenar una gran cantidad de datos de un mismo tipo. <strong class="color-primary">El tamaño de los arrays se declara en un primer momento y no puede cambiar en tiempo de ejecución como puede producirse en otros lenguajes.</strong>
                         <br>
                         <br>
-                        <strong>Sintaxix 👇</strong>
+                        <strong>Sintaxis 👇</strong>
                     </p>
                     <div class="small">
                         <div class="container-iframe-code">
@@ -1400,7 +1531,7 @@ String cadena = “Chanchito Feliz”;
                         Este atributo nos devuelve el número de elementos que posee el array. <strong class="color-primary">Hay que tener en cuenta que es una variable de solo lectura, es por ello que no podremos realizar una asignación a dicha variable. </strong>
                         <br>
                         <br>
-                        <strong>Sintaxix 👇</strong>
+                        <strong>Sintaxis 👇</strong>
                     </p>
                     <div class="small">
                         <div class="container-iframe-code">
@@ -1420,7 +1551,7 @@ String cadena = “Chanchito Feliz”;
                         Una matriz bidimensional puede tener varias filas, y en cada fila no tiene por qué haber el mismo número de elementos o columnas. Por ejemplo, podemos declarar e inicializar la siguiente matriz bidimensional
                         <br>
                         <br>
-                        <strong>Sintaxix 👇</strong>
+                        <strong>Sintaxis 👇</strong>
                     </p>
                     <div class="small">
                         <div class="container-iframe-code">
@@ -1429,6 +1560,331 @@ String cadena = “Chanchito Feliz”;
         matriz = new int[2][3];
         matriz[0][0] = 0;  // asignar un valor
         System.out.print(matriz[0][0]); // obtenenos el valor
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="bucles-java">
+                        ¿Qué es un bucle en Java?
+                    </h2>
+                    <p class="small color-text">
+                        Un bucle es unt tipo de estructura que contiene un bloque de instrucciones que se ejecuta repetidas veces.
+                        <br>
+                        🔔 Cada ejecución o repetición del bucle se le llama iteración.
+                        <br>
+                        <br>
+                    </p>
+                    <h2 class="color-title normal">
+                        1: Bucles controlados por condición
+                    </h2>
+                    <p class="small color-text">
+                        El control del número de iteración se lleva a cabo mediante una condición. Si la evaluación de la condicion es cierta el bucle realizará una nueva iteración.
+                        <br>
+                        <br>
+                    </p>
+                    <h2 class="color-title normal">
+                        2: Bucles controlados por contador
+                    </h2>
+                    <p class="small color-text">                        
+                        El bucle por contador es aquel que esta controlador por una variable contador
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="bucles-while">
+                        Bucle while
+                    </h2>
+                    <p class="small color-text">
+                        El bucle <strong>while </strong> solamente decide si realizar una nueva iteración basándose en el valor de la condición.
+                        <br>
+                        <br>
+                        <strong>Sintaxis 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+        while(condición){
+            bloque de instrucciones
+            ...
+        }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int edad = 20;
+    while (edad >= 18) {            
+        System.out.println("Es usted mayor de edad.");
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="bucles-do-while">
+                        Bucle do-while
+                    </h2>
+                    <p class="small color-text">
+                        El bucle do-while es muy similiar al <strong>while</strong>, con la diferencia de que primero se ejecuta el bloque de instrucciones y despues se evalua la condicion para decidir si se realiza un nueva iteración.
+                        <br>
+                        <br>
+                        <strong>Sintaxis 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+        do{
+            bloque de instrucciones
+            ...
+        }
+        while(condición)
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int edad = 20;
+    do{
+        System.out.println("Es usted mayor de edad.");
+    }while (edad <= 18);
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="bucles-for">
+                        Bucle for
+                    </h2>
+                    <p class="small color-text">                        
+                        El bucle for permite controlar el numero de iteraciones mediante una variable contador
+                        <br>
+                        <br>
+                        <strong>Sintaxis 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    for(inicialización, condición, contador){
+        bloque de instrucciones
+        ...
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    for (int i = 0; i < 10; i++) {
+        System.out.println("La i vale : " + i);
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="bucles-anidados">
+                        Bucle anidados
+                    </h2>
+                    <p class="small color-text">                        
+                        Consiste en incluir un bucle dentro de otro
+                        <br>
+                        🔔 Los bucles anidados pueden encontrase relacionados cuando los valores de las variables de los bucles mas externos intervienen en control de la iteración de un bucle interno, o independientes, cuando no existe relacion alguna entre ellos.
+                    </p>
+                    <h2 class="color-title normal m-0">
+                        01: Bucle anidados independientes
+                    </h2>
+                    <p class="small color-text">                        
+                        Se le denominan bucles anidados independientes cuando no dependen, en absoluto, unos de otros para determinar el número de iteraciónes
+                        <br>
+                        <br>
+                        <strong>Sintaxis 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    for(inicialización, condición, contador){
+        for(inicialización, condición, contador){
+            bloque de instrucciones
+            ...
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            System.out.println("Ejecutando...");
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text m-0">  
+                        <br> 
+                        <strong>Explicación 👇</strong>
+                    </p>                    
+                    <img src="../assets/img/public/bucles-anidados.png" alt="">
+                    <h2 class="color-title normal">
+                        <br>
+                        <br>
+                        02: Bucle anidados dependientes
+                    </h2>
+                    <p class="small color-text">                        
+                        Se le denominan bucles anidados dependientes cuando dependen de sus variables de control de un bucle externo.
+                        <br>
+                        <br>
+                        <strong>Sintaxis 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    for(inicialización, condiciónBucleExterno, contador){
+        for(inicialización, condición <= condiciónBucleExterno, contador){
+            bloque de instrucciones
+            ...
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text">
+                        <strong>Código de ejemplo 👇</strong>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    for (int i = 0; i <= 2; i++) {
+        System.out.println("Bucle externo, i = " + i);
+        for (int j = 0; j <= i; j++) {
+            System.out.println("Bucle interno j = " + j);
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="salidas-anticipadas">
+                        Salida anticipadas
+                    </h2>
+                    <p class="small color-text">                        
+                        Las salidas anticipadas en un bucle sirven para terminar la ejecución de un bucle y no esperar que finalice por la condición (realizando todas la iteraciones). Para poder hacer eso disponemos de:
+                        <br>
+                        <strong>break</strong>, Finaliza completamente el bucle
+                        <br>
+                        <strong>continue</strong>, detiene la iteración actual, y continua con la siguiente.
+                        <br>
+                        <br>
+                        🔔 Es recomendable evitar el uso, ya que rompen la secuencia natural de las instrucciones.
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo de (break) 👇</strong>
+                        <br><br>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int numero = 1;
+    while (numero <= 10) {            
+        System.out.println("La numero vale " + numero);
+        if(numero == 2) {
+            break;
+        }
+        numero++;
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text m-0">  
+                        <br> 
+                        <strong>Código de ejemplo de (continue) 👇</strong>
+                        <br>
+                        <br>
+                    </p>   
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    int numero = 1;
+    while (numero <= 10) {
+        numero++;
+        if (numero % 2 == 0) {
+            continue;
+        }
+        System.out.println("La numero vale " + numero);
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="bucles-ejercicios">
+                        Ejercicios de bucles
+                    </h2>
+                    <p class="small color-text">                        
+                        Ahora que conocemos los bucles vamos a ponerlo en práctica
+                        <strong>Ejercicios propuestos 👇</strong>
+                        <br><br>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    /*
+    N°01: Un centro educativo nos ha pedido que diseñemos una aplicación para calcular datos 
+    estadísticos de las edades de los alumnos.
+    Se introducirán datos hasta que uno de ellas sea negativo. La aplicación mostrará
+    la suma de todas las edades, la media de cuantos alumnos hemos introducido las edades
+    y cuantos alumnos son mayores de edad.
+
+    Implementar la aplicacion requerida.
+    */
+
+    /*
+    N°02: Se desea implementar una aplicación que pida al usuario que introduzca un número
+    comprendido entre 1 y 10. Debemos mostrar la tabla de multiplicar de dicho número.
+    El código tendrá que asegurarse de que el número introducido se encuentra entre el 1 y el 10.
+    */
+
+    /*
+    N°03: Diseñar un programa para pedir 5 calificaciones mostrar al final si hay alumnos desaprobados.
+    Sabiendo que la nota desaprobatoria es menor o igual 5 y la nota maxima aprobatoria es 10.
+    */
+
+
+    /*
+    N°04: Diseñar un programa para pedir 5 calificaciones, y mostrar al final la cantidad de alumnos desaprobados.
+    Sabiendo que la nota desaprobatoria es menor o igual 5 y la nota maxima aprobatoria es 10.
+    */
     </code></pre>
                         </div>
                     </div>
