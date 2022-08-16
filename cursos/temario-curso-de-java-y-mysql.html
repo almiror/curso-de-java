@@ -253,27 +253,21 @@
                                 </svg>
                             </span>
                             <ul class="submenu-aside smaller">
-                                <!-- <li class="submenu-item-aside">
-                                    <a href="#bucles-java" class="submenu-link-aside">¿Qué es un bucle?</a>
+                                <li class="submenu-item-aside">
+                                    <a href="#modificadores" class="submenu-link-aside">Modificadores de acceso</a>
                                 </li>
                                 <li class="submenu-item-aside">
-                                    <a href="#bucles-while" class="submenu-link-aside">Bucle while</a>
+                                    <a href="#modificadores-public" class="submenu-link-aside">Public</a>
                                 </li>
                                 <li class="submenu-item-aside">
-                                    <a href="#bucles-do-while" class="submenu-link-aside">Bucle do-while</a>
+                                    <a href="#modificadores-protected" class="submenu-link-aside">Protected</a>
                                 </li>
                                 <li class="submenu-item-aside">
-                                    <a href="#bucles-for" class="submenu-link-aside">Bucle For</a>
+                                    <a href="#modificadores-default" class="submenu-link-aside">Default </a>
                                 </li>
                                 <li class="submenu-item-aside">
-                                    <a href="#bucles-anidados" class="submenu-link-aside">Bucles anidados</a>
+                                    <a href="#modificadores-private" class="submenu-link-aside">Private </a>
                                 </li>
-                                <li class="submenu-item-aside">
-                                    <a href="#salidas-anticipadas" class="submenu-link-aside">Salida anticipadas</a>
-                                </li>
-                                <li class="submenu-item-aside">
-                                    <a href="#bucles-ejercicios" class="submenu-link-aside color-text-danger">Ejercicios de bucles</a>
-                                </li> -->
                             </ul>
                         </li>
                     </ul>
@@ -1940,6 +1934,247 @@ String cadena = “Chanchito Feliz”;
     N°08: Dadas 6 notas, escribir la cantidad de alumnos aprobados, condicionados (=4)
     y suspensos.
     */    
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="modificadores">
+                        Modificadores de acceso public, protected, default y private en Java. Encapsulamiento en Java
+                    </h2>
+                    <p class="small color-text">                        
+                        Los modificadores de acceso nos introducen al concepto de encapsulamiento. El encapsulamiento busca de alguna forma controlar el acceso a los datos que conforman un objeto o instancia, de este modo podríamos decir que una clase y por ende sus objetos que hacen uso de modificadores de acceso (especialmente privados) son objetos encapsulados.
+                        <br>
+                        <br>
+                        🔔 Los modificadores de acceso permiten dar un nivel de seguridad mayor a nuestras aplicaciones restringiendo el acceso a diferentes atributos, métodos, constructores asegurándonos que el usuario deba seguir una "ruta" especificada por nosotros para acceder a la información.
+                        <br>
+                        <br>
+                        🔔 <strong>Nota:</strong> Siempre se recomienda que los atributos de una clase sean privados y por tanto cada atributo debe tener sus propios métodos get y set para obtener y establecer respectivamente el valor del atributo.
+                        <br>
+                        <br>
+                        <strong>Código de ejemplo de (break) 👇</strong>
+                        <br><br>
+                    </p>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="modificadores-public">
+                        Modificador public
+                    </h2>
+                    <p class="small color-text">                        
+                        El modificador de acceso <strong>public</strong> es el más permisivo de todos, básicamente public es lo contrario a private en todos los aspectos (lógicamente), esto quiere decir que si un componente de una clase es public, tendremos acceso a él desde cualquier clase o instancia sin importar el paquete o procedencia de ésta.
+                        <br>
+                        <br>
+                        <strong>Clase con atributos public 👇</strong>
+                        <br><br>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    package miapp.EjemploPublic;
+
+    public class EjemploPublic
+    {
+        public static int atributo1; //Atributo publico
+    
+        public static void metodo1()
+        {
+            System.out.println("Método publico");
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text m-0">  
+                        <br> 
+                        <strong>Importar la primera clase con atributos public 👇</strong>
+                        <br>
+                        <br>
+                    </p>   
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    package paquete.externo;
+
+    import aap.EjemploPublic.EjemploPublic; //importamos la clase del ejemplo4
+    
+    public class ClaseExterna
+    {
+        public static void main(String[] args)
+        {
+            System.out.println(EjemploPublic.atributo1);
+            //Tuvimos Acceso directo por ser publico
+    
+            EjemploPublic.metodo1(); //Metodo1 también es publico
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="modificadores-protected">
+                        Modificador de acceso protected
+                    </h2>
+                    <p class="small color-text">                        
+                        El modificador de acceso <strong>protected</strong> nos permite acceso a los componentes con dicho modificador desde la misma clase, clases del mismo paquete y clases que hereden de ella (incluso en diferentes paquetes). Veamos
+                        <br>
+                        <br>
+                        <strong>Clase con atributos protected 👇</strong>
+                        <br><br>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    package aap.ejemplo3;
+
+    public class Ejemplo3
+    {
+        protected static int atributo1;//Atributo protected
+        private static int atributo2; //Atributo privado
+        int atributo3;//Atributo por default
+    
+        public static int getAtributo2()
+        {
+            return atributo2;
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text m-0">  
+                        <br> 
+                        <strong>Importar la primera clase con atributos protected 👇</strong>
+                        <br>
+                        <br>
+                    </p>   
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    package aap.ejemplo3_1;
+
+    import aap.ejemplo3.Ejemplo3;//Es necesario importar la clase del ejemplo 3
+    
+    public class Ejemplo3_1 extends Ejemplo3
+    {
+        public static void main(String[] args)
+        {
+            //La siguientes dos líneas generan error, pues atributo2 es privado y atributo 3 es default
+            //System.out.println(atributo2);
+            //System.out.println(atributo3);
+    
+            System.out.println(atributo1);//Sí tenemos acceso a atributo1
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="modificadores-default">
+                        El modificador por defecto (default)
+                    </h2>
+                    <p class="small color-text">                        
+                        Java nos da la opción de no usar un modificador de acceso y al no hacerlo, el elemento tendrá un acceso conocido como default o acceso por defecto que permite que tanto la propia clase como las clases del mismo paquete accedan a dichos componentes.
+                        <br>
+                        <br>
+                        <strong>Clase con atributos default 👇</strong>
+                        <br><br>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    package miapp.ejemplo2;
+    public class Ejemplo2
+    {
+        private static int atributo1;//Este atributo es privado
+        static int contador = 0; //Contador con acceso por defecto
+    
+        public static void setAtributo1(int valor)
+        {
+            contador++;//Contador que lleva el registro de ediciones del atributo1
+            atributo1 = valor;//Establecemos el valor del atributo
+        }
+    
+        public static int getAtributo1()
+        {
+            return atributo1;//Retornamos el valor actual del atributo
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                    <p class="small color-text m-0">  
+                        <br> 
+                        <strong>Importar la primera clase con atributos default 👇</strong>
+                        <br>
+                        <br>
+                    </p>   
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    package miaap.ejemplo2;
+    public class Ejemplo2_1
+    {
+        public static int getContador()
+        {
+                return Ejemplo2.contador;//Accedemos directamente al contador desde otra clase
+        }
+    }
+    </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--END CODE-->
+                <div>
+                    <!--START CODE-->
+                    <h2 class="color-text-succes t2 m-0 title-body-aside" id="modificadores-private">
+                        Modificador de acceso private
+                    </h2>
+                    <p class="small color-text">                        
+                        El modificador private en Java es el más restrictivo de todos, básicamente cualquier elemento de una clase que sea privado puede ser accedido únicamente por la misma clase.
+                        <br>
+                        <br>
+                        <strong>Clase con atributos private 👇</strong>
+                        <br><br>
+                    </p>
+                    <div class="small">
+                        <div class="container-iframe-code">
+                            <pre><code class="hljs languaje-java">
+    package aap.ejemplo1;
+    public class Ejemplo1
+    {
+        private int atributo1;//Este atributo es privado
+        private int contador = 0; //Contador de registro
+    
+        //Si un atributo es privado podemos crear método get y set ...
+        //... para éste y permitir el acceso a él desde otras instancias
+    
+        public void setAtributo1(int valor)
+        {
+            contador++;//Contador que lleva el registro de ediciones del atributo1
+            atributo1 = valor;//Establecemos el valor del atributo
+        }
+    
+        public int getAtributo1()
+        {
+            return atributo1;//Retornamos el valor actual del atributo
+        }
+    
+        //Get para el contador
+        public int getContador()
+        {
+            return contador;
+        }
+        //Notar que no ponemos un set, pues no nos interesa que el contador pueda ser cambiado.
+    }
     </code></pre>
                         </div>
                     </div>
